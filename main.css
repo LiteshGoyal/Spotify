@@ -1,0 +1,455 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,300&display=swap');
+
+@keyframes animate {
+    25%{
+        background-position: 0 100%;
+    }
+    50%{
+        background-position: 100% 100%;
+    }
+    75%{
+        background-position: 100% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    
+}
+body{
+    background-color: black;
+}
+ ::-webkit-scrollbar{
+    width: 15px;
+    height: 15px;
+}
+::-webkit-scrollbar-track{
+    background-color: #121212;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(137, 137, 137);
+    border-radius: 4px;
+}
+.container{
+    display: flex
+}
+/* .claim{
+
+    flex-direction: column;
+} */
+.smallcontainer{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+#home{
+    margin: 1vh;
+    background-color: #121212;
+    color:white;
+    width: 25vw;
+    height: 15vh;
+    border-radius: 20px;
+}
+#home img{
+    height: 35px;
+    margin: 10px 20px 5px 20px;
+}
+#home li{
+    display: flex;
+    align-items: center;
+}
+.pt1{
+    cursor: pointer;
+    font-weight: bold;
+}
+.pt1:hover{
+    color: antiquewhite;
+}
+.panel{
+    margin: 1vh;
+    background-color: #121212;
+    color:white;
+    width: 25vw;
+    border-radius: 20px;
+    height: 67vh;
+    overflow: auto;
+}
+.panel h3{
+    width: 5vw;
+    background-color: rgb(255 237 237 / 8%);
+    text-align: center;
+    border-radius: 10px;
+    margin: 1vw;
+}
+.panel ul img{
+    
+    width: 2vw;
+    margin: 2vh;
+}
+.panel ul #source{ 
+    
+    display: flex;
+    align-items: center;
+}
+.panel ul #source a{
+    background-color: #000000;
+    margin: 0 10px 0 200px;
+    padding: 0.4rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.panel ul .pt3{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+.songs{
+    background-color: #1e1e1e;
+    color: white;
+    width: 75vw;
+    border-radius: 25px;
+    margin : 0 1vw;
+    height: 85vh;
+    overflow-x: hidden;
+}
+#arrow{
+    display: flex;
+}
+#keys{
+    display: flex;
+    margin: 1vw 1vw 0vw 1vw;
+    list-style: none;
+}
+#leftarrow{
+    transform: rotate(180deg);
+    width: 2vw;
+    cursor: pointer;
+}
+#rightarrow{
+    width: 2vw;
+    cursor: pointer;
+}
+#login{
+    display: flex;
+    width: 63vw;
+    margin: 0.5vw 1vw;
+    justify-content: right;
+    list-style: none;   
+}
+#signup{
+    outline: none;
+    border: none;
+    background-color: rgb(41,41,41);
+    color: white;
+    font-weight: bold;
+    margin: 10px 10px 0 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+#signup:hover{
+    color: antiquewhite;
+}
+#signin{
+    outline: none;
+    border: none;
+    background-color: rgb(41,41,41);
+    color: white;
+    font-weight: bold;
+    margin: 10px 10px 0 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+#signin:hover{
+    color: antiquewhite;
+}
+#playlist{
+    background: conic-gradient(
+        #dff2ae 0 25%,
+        #ff90f4 25% 50%,
+        #feefe7 50% 75%,
+        #2bfff4 75%
+    );
+    background-size: 200% 200%;
+    animation: animate 4.3s ease-in-out infinite;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+#singer1{
+    background: conic-gradient(
+        #dff2ae 0 25%,
+        #ff90f4 25% 50%,
+        #feefe7 50% 75%,
+        #2bfff4 75%
+    );
+    background-size: 200% 200%;
+    animation: animate 4.3s ease-in-out infinite;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+#allsongs{
+    display: flex;
+}
+#allsongs .card1{
+    display: flex;
+    width: 250px;
+    height: 250px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #3c3b3b;
+    margin: 1.5vw;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 8px;
+}
+#allsongs .card1:hover{
+    transform: scale(1.1);
+}
+#allsongs .card1 p{
+    margin: auto;
+    color: white;
+}
+#sidhulist{
+    display: flex;
+    overflow: hidden;
+} 
+#sidhulist:hover{
+    overflow-x: scroll;
+
+}
+#sidhulist .card1{
+    display: flex;
+    width: 250px;
+    height: 250px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #3c3b3b;
+    margin: 1.5vw;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 8px;
+}
+#sidhulist .card1:hover{
+    transform: scale(1.1);
+}
+#sidhulist .card1 p{
+    margin: auto;
+    color: white;
+}
+#varinderlist{
+    display: flex;
+    overflow: hidden;
+}
+#varinderlist:hover{
+    overflow-x: scroll;
+}
+#varinderlist .card1{
+    
+    
+    display: flex;
+    width: 250px;
+    height: 250px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #3c3b3b;
+    margin: 1.5vw;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 8px;
+}
+#varinderlist .card1:hover{
+    transform: scale(1.1);
+}
+#varinderlist .card1 p{
+    margin: auto;
+    color: white;
+}
+#arjanlist{
+    display: flex;
+    overflow: hidden;
+}
+#arjanlist:hover{
+    overflow-x: scroll;
+}
+#arjanlist .card1{
+    display: flex;
+    width: 250px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #3c3b3b;
+    margin: 1.5vw;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 8px;
+}
+#arjanlist .card1:hover{
+    transform: scale(1.1);
+}
+#arjanlist .card1 p{
+    margin: auto;
+    color: white;
+}
+.songImage{
+        margin: auto;
+        border-radius: 15px;
+        width: 230px;
+        height: 230px;
+}
+#parmishlist{
+    display: flex;
+    overflow: hidden;
+}
+#parmishlist:hover{
+    overflow-x: scroll;
+}
+#parmishlist .card1{
+    display: flex;
+    width: 250px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #3c3b3b;
+    margin: 1.5vw;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 8px;
+}
+#parmishlist .card1:hover{
+    transform: scale(1.1);
+}
+#parmishlist .card1 p{
+    margin: auto;
+    color: white;
+}
+.songImage{
+        margin: auto;
+        border-radius: 15px;
+        width: 230px;
+        height: 230px;
+}
+#hr{
+    height: 2px;
+    background-color: #000000;
+    border: none;
+}
+.asdfgh{
+    height: 70px;
+    list-style: none;
+    display: flex;
+    margin: 0 20px;
+    padding: 10px;
+    align-items: center;
+    font-weight: bolder;
+}
+.asdfgh li{
+    margin: 20px;
+}
+.asdfgh li a{
+    text-decoration: none;
+    color: white;
+}
+.footer{
+    background-color: #181717;
+    height: 14vh;
+    margin:0 0 0 0
+}
+.range-field{
+    -webkit-appearance: none;
+    outline: none;
+    width: 80vw;;
+    height: 15px;
+    margin: 1vh 10vw;
+    background-color:  hsla(0,0%,100%,.3);
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,1);
+    overflow: hidden;
+}
+.range-field::-webkit-slider-thumb{
+    -webkit-appearance: none;
+     width: 20px;
+    height: 15px;
+    border-radius: 50%;
+    background: #000000;
+    box-shadow: -81vw 0 0 80vw white;
+    cursor: pointer;
+}
+#gif1{
+    width: 5vw;
+    margin: 0 0 2vw 10vw;
+    opacity: 0;
+    transition: 0.5s ease-in;
+}
+#details{
+    display: flex;
+}
+
+#butts{
+    margin: 0 0 0 32vw;
+}
+#play{
+    cursor: pointer;
+    margin: 5px;
+}
+#backward{
+    cursor: pointer;
+    margin: 5px;
+}
+#forward{
+    cursor: pointer;
+    margin: 5px;
+}
+#speaker{
+    cursor: pointer;
+    margin: 5px;
+}
+#time{
+    color: white;
+    margin: 0 0vw 0 23vw;
+}
+
+.hidden{
+    display: none;
+}
+.blur{
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.83);
+}
+
+.moosaji{
+    position: absolute;
+    height: 40vh;
+    width: 40vw;
+    background-color: rgb(57, 56, 53);
+    color: rgb(255, 255, 255);
+    top: 28vh;
+    left: 29vw;
+    z-index: 100;
+    border-radius: 50px;
+    padding: 15px;
+    font-size: larger;
+}
+

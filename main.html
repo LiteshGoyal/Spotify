@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel = "icon" href ="images/spotify.png" 
+        type = "image/x-icon">
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="smallcontainer">
+        <div id="home">
+            <ul>
+                <li><img src="images/home-5-64.png" class="pt1 pt2" alt=""><p class="pt1">Home</p></li>
+                <li><img src="images/search-3-64.png" class="pt1 pt2" alt=""><p class="pt1">Search</p></li>
+            </ul>
+        </div>
+        <div class="panel scroll-bar">
+            <h3>Artists</h3>
+            <ul>
+                <li id="source"><img src="images/search-3-64.png" alt=""><a>Recents↓</li>
+                
+                <li class="pt3 sidhufirst" ><img src="images/sidhu.webp" alt=""><p>Sidhu Moose Wala</p></li>
+                <li class="pt3" ><img src="images/varinder.jpg" alt=""> <p>Varinder brar</p></li>
+                <li class="pt3" ><img src="images/arjan.jpg" alt=""><p>Arjan dhillon</p></li>
+                <li class="pt3" ><img src="images/parmish.jpg" alt=""><p>Parmish Verma</p></li>
+                <li class="pt3" ><img src="images/babbu.jpg" alt=""><p>Babbu Mann</p></li>
+                <li class="pt3" ><img src="images/sharry.jpg" alt=""><p>Sharry Mann</p></li>
+                <li class="pt3" ><img src="images/karan.webp" alt=""><p>Karan Aujla</p></li>
+            </ul>
+        </div>
+      </div>
+
+
+      <div class="songs scroll-bar">
+        <div id="arrow">
+            <ul id="keys">
+                <li><img id="leftarrow" src="images/6555612.png" alt=""></li>
+                <li><img id="rightarrow" src="images/6555612.png"  alt=""></li>
+            </ul>
+            <ul id="login">
+                <li><button id="signup">SignUp</button></li>
+                <li><button id="signin">LogIn</button></li>
+            </ul> 
+        </div>
+        <br>
+<div id="bigContainer">
+        <h1 id="playlist">Playlist</h1>
+        <div id="allsongs">
+            <a href="playlist.html"><span class="card1" id="mixsongs">
+                <img src="images/playlist.jpg" class="songImage" alt=""><p> All Songs</p>
+            </span></a>
+        </div>
+
+        <h1 id="singer1">Sidhu Moose Wala</h1>
+        <div class="scroll-bar" id="sidhulist">
+            <span class="card1" id="meranaa" onclick="playsong('meranaa')">
+                <img src="images/mera naa.jpg" class="songImage" alt=""><p> Mera Na</p>
+            </span>
+            <span class="card1" id="295" onclick="playsong('tnf')">
+                <img src="images/295.jpg" class="songImage" alt=""><p> 295</p>
+            </span>
+            <span class="card1" id="levels" onclick="playsong('levels')">
+                <img src="images/levels.jpg" class="songImage" alt=""><p> Levels</p>
+            </span>
+            <span class="card1" id="goat" onclick="playsong('goat')">
+                <img src="images/goat.jpg" class="songImage" alt=""><p> G.O.A.T.</p>
+            </span>
+            <span class="card1" id="celebkill" onclick="playsong('celebkill')">
+                <img src="images/cele.jpg" class="songImage" alt=""><p> Celebrity Killer</p>
+            </span>
+        </div>
+
+        <h1 id="singer1">Varinder Brar</h1>
+        <div class="scroll-bar" id="varinderlist">
+            <span class="card1" id="thaa" onclick="playsong('thaa')">
+                <img src="images/thaa.jpg" class="songImage" id="songImage2" alt=""><p> Thaa</p>
+            </span>
+            <span class="card1" id="jattzone" onclick="playsong('jattzone')">
+                <img src="images/JattZone.jpg" class="songImage" id="songImage2" alt=""><p> Jatt Life Zone</p>
+            </span>
+            <span class="card1" id="jattlife" onclick="playsong('jattlife')">
+                <img src="images/jattlife.jpg" class="songImage" id="songImage2" alt=""><p> Jatt Life Thug Life</p>
+            </span>
+            <span class="card1" id="kafla" onclick="playsong('kaafla')">
+                <img src="images/kaafla.jpg" class="songImage" id="songImage2" alt=""><p> Kaafla</p>
+            </span>
+            <span class="card1" id="takkar" onclick="playsong('takkar')">
+                <img src="images/takkar.jpg" class="songImage" id="songImage2" alt=""><p> Takkar</p>
+            </span>
+        </div>
+
+        <h1 id="singer1">Arjan Dhillon</h1>
+        <div class="scroll-bar" id="arjanlist">
+            <span class="card1" id="kath" onclick="playsong('kath')">
+                <img src="images/kath.jpg" class="songImage" id="songImage1" alt=""><p> Kath</p>
+            </span>
+            <span class="card1" id="score" onclick="playsong('score')">
+                <img src="images/score.jpg" class="songImage" id="songImage1" alt=""><p> Score</p>
+            </span>
+            <span class="card1" id="raahwarga" onclick="playsong('raahwarga')">
+                <img src="images/raah.jpg" class="songImage" id="songImage1" alt=""><p> Raah Warga</p>
+            </span>
+            <span class="card1" id="salute" onclick="playsong('salute')">
+                <img src="images/salute.jpg" class="songImage" id="songImage1" alt=""><p> Salute</p>
+            </span>
+        </div>
+        <h1 id="singer1">Parmish Verma</h1>
+        <div class="scroll-bar" id="parmishlist">
+            <span class="card1" id="4Yaar" onclick="playsong('Yaar')">
+                <img src="images/4yaar.jpg" class="songImage" id="songImage1" alt=""><p> 4 Yaar</p>
+            </span>
+            <span class="card1" id="chakagya" onclick="playsong('chakagya')">
+                <img src="images/chakkagya.jpg" class="songImage" id="songImage1" alt=""><p> Mei Agyaa</p>
+            </span>
+            <span class="card1" id="Gaal" onclick="playsong('Gaal')">
+                <img src="images/Gaal-Ni-Kadni.jpg" class="songImage" id="songImage1" alt=""><p> Gaal Ni Kadni</p>
+            </span>
+            <span class="card1" id="punjadaab" onclick="playsong('punjadaab')">
+                <img src="images/Punja-Daab.jpg" class="songImage" id="songImage1" alt=""><p> Punja-Daab</p>
+            </span>
+            <span class="card1" id="Fade" onclick="playsong('Fadejange')">
+                <img src="images/safade.jpg" class="songImage" id="songImage1" alt=""><p> Sab Fade Jange</p>
+            </span>
+        </div>
+      </div>
+      <div class="claim">
+        <hr id="hr">
+        <ul class="asdfgh">
+            <li> <a href=""> Legal</a></li>
+            <li> <a href=""> Privacy Center</a></li>
+            <li> <a href=""> Cookies</a></li>
+            <li> <a href=""> About Ads</a></li>
+            <li> <a href=""> Accessibility</a></li>
+            <li> <a href=""> &copy;Copyright</a></li>
+        </ul>
+    </div>
+    </div>
+    </div>
+    
+    <div class="footer">
+        <div class="field-group" id="bar">
+            <input type="range" name="" class="range-field" id="bar1" value="0" min="0" max="100">
+        </div>
+            <div id="details">
+            <img src="images/5uwq.gif" id="gif1">
+                <div id="butts">
+                    <i class="fa-solid fa-backward fa-2x" style="color: #ffffff;" id="backward"></i>
+                    <i class="fa-solid fa-circle-play fa-2x" style="color: #ffffff;" id="play"></i>
+                    <i class="fa-solid fa-forward fa-2x" style="color: #ffffff;" id="forward" onclick="nextsongplays()"></i>
+                    <input id="volumeSlider" type="range" min="0" max="100" step="1" value="100">
+                </div>
+                <div id="time">00:00/00:00
+                </div>
+
+            </div>
+    </div>
+    <div class="blur hidden"></div>
+    <div class="hidden moosaji"><img src="images/sidhu.webp" alt="#" width="30%">
+        <h1>SIDHU MOOSE WALA</h1>
+    <p>Shubhdeep Singh Sidhu (11 June 1993 – 29 May 2022), known professionally as Sidhu Moose Wala, was an Indian rapper, singer and songwriter. He worked predominantly in Punjabi-language music and cinema. He is generally regarded to have been one of the greatest Punjabi artists of his generation[8][9] and to many, amongst the greatest Punjabi artists of all time.Moreover, he was considered a key figure in opening the door for Punjabi artists into mainstream music.</p></div>
+
+
+
+  </body>
+  <script src="main.js"></script>
+</html>
